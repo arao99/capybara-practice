@@ -26,4 +26,7 @@ session = generate_crawler
 session.visit 'https://arao99.github.io/capybara-practice/'
 
 # 動作確認
-puts session.html
+# puts session.html
+pp session.has_css?('h1')
+pp session.has_css?('h3')
+pp session.has_css?('h2')
